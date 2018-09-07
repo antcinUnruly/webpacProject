@@ -15,7 +15,7 @@ module.exports = {
         exclude: /node_modules/ // do not apply babel to node modules
       },
       {
-        use: ['style-loader', 'css-loader'], // css-loader allows webpack to understand and read content of css files; style-loader takes css modules and sticks them in a style file in index.html
+        use: ['style-loader', 'css-loader'] // css-loader allows webpack to understand and read content of css files; style-loader takes css modules and sticks them in a style file in index.html
         test: /\.css$/
       }
     ]
