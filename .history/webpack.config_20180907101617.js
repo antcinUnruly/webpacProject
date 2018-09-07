@@ -36,7 +36,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor' // solves issues of double including vendor models in both bundle and vendor files
+      name: 'vendor'
     })
   ]
 };
