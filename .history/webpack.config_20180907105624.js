@@ -39,8 +39,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest'] // solves issues of double including vendor models in both bundle and vendor files
-      // manifest.js better tells the browser whether or not vendor file got changed
+      name: 'vendor' // solves issues of double including vendor models in both bundle and vendor files
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'

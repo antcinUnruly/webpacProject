@@ -21,8 +21,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js' // [name] gets replaced with the key from the entry section;
-    //[chunkhash] hash of contents of file, everytime bundle is updated, webpack will automatically hash contents of file and spit it out as chunkhash
+    filename: '[name].[chunkhash].js' // [name] gets replaced with the key from the entry section
   },
   module: {
     rules: [
@@ -39,8 +38,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest'] // solves issues of double including vendor models in both bundle and vendor files
-      // manifest.js better tells the browser whether or not vendor file got changed
+      name: 'vendor' // solves issues of double including vendor models in both bundle and vendor files
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
