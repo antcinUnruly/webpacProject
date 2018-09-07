@@ -19,7 +19,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js' // [name] gets replaced with the key from the entry section
+    filename: '[name].js'
   },
   module: {
     rules: [

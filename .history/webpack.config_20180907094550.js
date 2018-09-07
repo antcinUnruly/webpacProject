@@ -1,16 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-const VENDOR_LIBS = [
-  'react',
-  'lodash',
-  'redux',
-  'react-redux',
-  'react-dom',
-  'faker',
-  'react-input-range',
-  'redux-form',
-  'redux-thunk'
-];
+const VENDOR_LIBS = [];
 
 module.exports = {
   entry: {
@@ -19,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js' // [name] gets replaced with the key from the entry section
+    filename: 'bundle.js'
   },
   module: {
     rules: [
