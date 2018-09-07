@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const VENDOR_LIBS = [
   'react',
   'lodash',
@@ -39,9 +38,6 @@ module.exports = {
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor' // solves issues of double including vendor models in both bundle and vendor files
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/index.html'
     })
   ]
 };
