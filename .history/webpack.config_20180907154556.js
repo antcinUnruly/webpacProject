@@ -47,7 +47,7 @@ module.exports = {
     }),
     // DefinePlugin used to define Window's scope variables that will be defined within our bundle.js file
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) // process.env.NODE_ENV refers to the environment variable running on machine
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ]
 };
